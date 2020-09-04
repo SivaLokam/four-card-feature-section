@@ -5,10 +5,16 @@ body{
 }
 
 footer {
-  position: absolute;
+  /* position: absolute; */
 }
+
+.top-container {
+  position: relative;
+}
+
 .top-container h1 {
   margin: 0;
+
 }
 .intro {
   font-weight: normal;
@@ -23,14 +29,20 @@ footer {
 .mainwindow {
   /* width: 50%; */
   position: relative;
-  left: 250px;
+  left: 265px;
   top:50px;
 }
+
+img {
+  float: right;
+  /* padding: 20px; */
+}
+
 .section1 {
   /* height: 200px; */
   width: 200px;
   position: absolute;
-  top:150px;
+  top:0px;
   /* background-color: white; */
   /* border: 2px solid Cyan; */
   /* border-radius: 1px; */
@@ -51,7 +63,7 @@ footer {
   /* height: 200px; */
   width: 200px;
   position: absolute;
-  left:300px;
+  top:300px;
   /* border: 2px solid red; */
   /* border-radius: 10% ; */
   /* border-width: 2px 0 0 0; */
@@ -66,8 +78,7 @@ footer {
   /* height: 200px; */
   width: 200px;
   position: absolute;
-  left:300px;
-  top:300px;
+  top:500px;
   /* border: 2px solid orange; */
   /* border-radius: 10% ; */
   /* border-width: 2px 0 0 0; */
@@ -83,8 +94,7 @@ footer {
   /* height: 200px; */
   width: 200px;
   position: absolute;
-  left:600px;
-  top:150px;
+  top:750px;
 
   border: 2px solid blue;
   border-radius: 2% ;
@@ -95,9 +105,82 @@ footer {
 }
 .attribution {
   position: absolute;
+  top:1000px;
 }
 
-img {
-  float: right;
-  /* padding: 20px; */
+
+@media all and (min-width: 1024px) {
+  .section1 {
+    /* height: 200px; */
+    width: 200px;
+    position: absolute;
+    top:150px;
+    /* background-color: white; */
+    /* border: 2px solid Cyan; */
+    /* border-radius: 1px; */
+    /* border-radius: 10% ; */
+    /* border-width: 2px 0 0 0; */
+
+    /* border-radius: 1px; */
+
+    border: 2px solid Cyan;
+    border-radius: 2% ;
+    border-width: 2px 0 0 0;
+    box-shadow: 0 0 0 1px hsl(229, 6%, 66%);
+
+    padding: 20px;
+
+  }
+  .section2 {
+    /* height: 200px; */
+    width: 200px;
+    position: absolute;
+    left:300px;
+    top:0px;
+    /* border: 2px solid red; */
+    /* border-radius: 10% ; */
+    /* border-width: 2px 0 0 0; */
+
+    border: 2px solid red;
+    border-radius: 2% ;
+    border-width: 2px 0 0 0;
+    box-shadow: 0 0 0 1px hsl(229, 6%, 66%);
+    padding: 20px;
+  }
+  .section3 {
+    /* height: 200px; */
+    width: 200px;
+    position: absolute;
+    left:300px;
+    top:350px;
+    /* border: 2px solid orange; */
+    /* border-radius: 10% ; */
+    /* border-width: 2px 0 0 0; */
+
+    border: 2px solid orange;
+    border-radius: 2% ;
+    border-width: 2px 0 0 0;
+    box-shadow: 0 0 0 1px hsl(229, 6%, 66%);
+
+    padding: 20px;
+  }
+  .section4 {
+    /* height: 200px; */
+    width: 200px;
+    position: absolute;
+    left:600px;
+    top:150px;
+
+    border: 2px solid blue;
+    border-radius: 2% ;
+    border-width: 2px 0 0 0;
+    box-shadow: 0 0 0 1px hsl(229, 6%, 66%);
+
+    padding: 20px;
+  }
+  .attribution {
+    position: absolute;
+    top:800px;
+    left:540px;
+  }
 }
